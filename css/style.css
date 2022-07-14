@@ -1,0 +1,393 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Page properties*/
+.container {
+/*max-width: 1440px;
+margin: 0 auto;*/
+}
+
+/*I set the width the each block because I have
+a problem with orientation while the scrolling page*/
+.content-wrapper {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.top-section {
+text-align: center;
+}
+
+/*Up-section*/
+.up-title {
+font-size: 60px;
+font-family: 'Arapey';
+font-style: normal;
+font-weight: 400;
+color: #9DB0D1;
+margin: 100px auto 50px;
+}
+
+/*What I'm doing wrong?? 
+Why I'm specifying width: 900px, 
+but not 1024px???? */
+.up-subtitle {
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+margin: 50px auto;
+line-height: 24px;
+max-width: 900px;
+}
+
+.top-btn {
+  width: 267px;
+  border: none;
+  border-radius: 10px;
+  background-color: #EBAC87;
+  text-transform: uppercase;
+  font-family: 'Arapey';
+  font-size: 30px;
+  color: #fff;
+  padding: 24px 50px;
+  margin-bottom: 50px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.btn-style {
+background-color: #EBAC87; 
+color: #fff;
+}
+
+.btn-style:hover {
+background-color: #fff; 
+color: #EBAC87;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*How I did it?? Please, explain me
+why on the layout checkmark in circle, has padding: 17px 15px;
+and when I want to do the same properties in me CSS code, than
+the checkmark dissapear???*/
+
+.up-list {
+display: flex;
+justify-content: space-evenly;
+}
+
+.list-item {
+display: flex;
+align-items: center;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+}
+
+.checkmark-box {
+width: 60px;
+height: 60px;
+background-color: #9DB0D1;
+border-radius: 60%;
+margin: 0 15px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*Main*/
+.cloud-wrapper {
+height: 200px;
+background: url("../img/clouds.png") repeat-x top / auto 200px, 
+linear-gradient(180deg, rgba(135, 198, 235, 00) 8.33%, #87C6EB 93.06%);
+padding: 250px 120px 100px; 
+font-family: 'Arapey';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+text-align: center;
+}
+
+/*Img-section*/
+.color-container {
+background: rgba(135, 198, 235, 1);
+}
+
+.img-section {
+display: flex;
+justify-content: space-between;
+}
+
+.img-wrapper {
+  width: 350px;
+  height: 560px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  justify-content: center;  
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom:10px;
+  }
+
+.img-box {
+  width: 310px;
+  height: 310px;
+  background-color: #EBAC87;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 0 20px;
+  }
+
+.img {
+  width: 100%;
+}
+
+.img-subtitle {
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+}
+
+.bold {
+font-weight: 700;
+}
+
+.first-elips-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(235, 172, 135, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.second-elips-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(235, 172, 135, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.third-elips-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(235, 172, 135, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.elips-number {
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+color: #FFFFFF;
+}
+
+/*Background mountain section*/
+.bg-content-wrapper {
+background-color: ;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.content {
+background: url("https://i.ibb.co/Rh3tHfc/bg-mount.png");
+background-repeat: no-repeat;
+background-size: 600px 475px;
+background-position: 101% 114%;
+}
+
+.title {
+font-family: 'Arapey';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+color: #fff;
+max-width: 600px;
+padding: 75px 0 0 0;
+}
+
+.subtitle {
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+color: #000;
+max-width: 600px;
+padding: 50px 0 50px 0;
+}
+
+.btn-title {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.btn-in {
+width: 220px;
+height: 80px;
+border: none;
+border-radius: 10px;
+text-transform: uppercase;
+font-family: 'Arapey';
+font-size: 30px;
+color: rgba(235, 172, 135, 1);
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 50px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.btn-in-style {
+background-color: #fff; 
+color: #EBAC87;
+}
+
+.btn-in-style:hover {
+background-color: #EBAC87; 
+color: #fff;
+box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-help {
+  width: 80px;
+  height: 80px;
+  border-radius: 70%;
+  background: rgba(235, 172, 135, 1);
+  border: none;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  color: #fff;
+  margin: 0 0 50px 0;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.subtitle-link {
+color: #000;
+}
+
+/*Footer*/
+.footer-container {
+  background-color: #E5E5E5;
+}
+
+.bot-btn {
+  width: 267px;
+  border: none;
+  border-radius: 10px;
+  background-color: #EBAC87;
+  text-transform: uppercase;
+  font-family: 'Arapey';
+  font-size: 30px;
+  color: #fff;
+  padding: 24px 50px;
+  margin: 50px 50px 50px 0;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.web-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.web-section {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
